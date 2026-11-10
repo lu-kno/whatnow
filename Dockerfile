@@ -25,4 +25,4 @@ EXPOSE 7777
 WORKDIR /app
 VOLUME /app/data
 LABEL org.opencontainer.image.name="whatnow"
-CMD [ "whatnow", "serve", "--addr", "0.0.0.0:7777", "-db", "/app/data/whatnow.db" ]
+CMD [ "whatnow", "serve", "--addr", "127.0.0.1:7777", "-db", "/app/data/whatnow.db" ]
