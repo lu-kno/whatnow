@@ -1,5 +1,5 @@
 FROM golang:alpine AS builder
-RUN apk add npm git just nodejs
+RUN apk add npm git just nodejs bash
 WORKDIR /src
 
 # install npm dependencies to populate cache
